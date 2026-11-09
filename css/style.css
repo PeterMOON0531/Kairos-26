@@ -327,6 +327,30 @@ input {
   background: var(--paper-2);
 }
 
+#message {
+  background: linear-gradient(180deg, #f8f4ed 0%, #efe4d4 100%);
+}
+
+#pillars {
+  background: linear-gradient(165deg, #e5efe4 0%, #f6f3ec 70%);
+}
+
+#schedule {
+  background: linear-gradient(180deg, #f4f1ea 0%, #e4ebf0 100%);
+}
+
+#program {
+  background: linear-gradient(180deg, #f8f0e6 0%, #f0ddd0 100%);
+}
+
+#team {
+  background: linear-gradient(180deg, #f7f5f1 0%, #e6e1d8 100%);
+}
+
+#prepare {
+  background: linear-gradient(165deg, #eef4ea 0%, #f8f3e8 100%);
+}
+
 .section-night {
   background:
     radial-gradient(ellipse 50% 80% at 0% 100%, rgba(157, 46, 39, 0.18), transparent 60%),
@@ -1049,6 +1073,18 @@ input {
   grid-template-columns: minmax(15rem, 0.72fr) minmax(0, 1.28fr);
   gap: 1.15rem;
   align-items: start;
+}
+
+@media (max-width: 800px) {
+  .prepare-layout,
+  .intro-row {
+    grid-template-columns: 1fr;
+  }
+
+  .frame-side {
+    position: static;
+    aspect-ratio: 16 / 10;
+  }
 }
 
 .frame-side {
